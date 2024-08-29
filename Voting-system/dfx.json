@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "Voting-system-backend": {
+      "main": "src/Voting-system-backend/main.mo",
+      "type": "motoko"
+    },
+    "Voting-system-frontend": {
+      "dependencies": [
+        "Voting-system-backend"
+      ],
+      "source": [
+        "src/Voting-system-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "Voting-system-frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
